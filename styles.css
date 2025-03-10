@@ -86,6 +86,19 @@ button {
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+    h4 {
+      font-weight: 600;
+      font-size: 32px;
+      text-align: center;
+      color: #4d4d4d;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      text-align: center;
+    }
   }
   .community-branches {
     display: flex;
@@ -95,15 +108,15 @@ button {
   }
 
   .community-category {
-    max-width: 300px;
-    width: 100%;
-    height: auto;
+    max-height: 280px;
+    height: 100%;
     text-align: center;
-    padding: 26px 16px;
-    border: solid white 1px;
+    padding: 15px 12px;
+    border: solid white 5px;
+    background: 14px;
 
     h4 {
-      font-size: 24px;
+      font-size: 28px;
       font-weight: 600;
       color: #4d4d4d;
       padding-bottom: 6px;
@@ -116,4 +129,76 @@ button {
       color: #717171;
     }
   }
+}
+
+.three-years {
+  padding-top: 150px;
+  padding-left: 100px;
+  padding-right: 110px;
+  display: flex;
+  gap: 100px;
+}
+.three-text {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  h1 {
+    font-weight: 600;
+    font-size: 30px;
+    color: #4d4d4d;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    color: #717171;
+  }
+}
+.third-button {
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.footer-explanation {
+  padding-top: 48px;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  gap: 50px;
+}
+.footer-explanation-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  button {
+    margin-top: 20px;
+  }
+
+  h4 {
+    font-weight: 600;
+    font-size: 36px;
+    color: #4d4d4d;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+.feed-back {
+  padding: 48px 100px;
+  display: flex;
+  gap: 50px;
+}
+.icons {
+  display: flex;
+  gap: 30px;
+}
+.feedback-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
