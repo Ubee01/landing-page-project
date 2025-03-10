@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  max-width: 1200px;
+  height: 100vh;
+  font-family: inter;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul,
+.right {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  list-style-type: none;
+}
+
+ul a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  background: #4caf4f;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 7px;
+}
+.right-ul-text {
+  color: #4caf4f;
+}
+
+.hero-section {
+  display: flex;
+  padding-top: 30px;
+  gap: 35px;
+  .hero-text {
+    padding: 162px 50px 100px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    h1 {
+      font-size: 57px;
+      font-weight: 600;
+    }
+
+    p {
+      font-family: Inter;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0%;
+      color: #717171;
+    }
+  }
+  .hero-btn {
+    padding-top: 16px;
+  }
+
+  .hero-image {
+    padding: 140px 60px 100px 150px;
+  }
+}
+
+.community {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  .community-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .community-branches {
+    display: flex;
+    gap: 150px;
+    padding-right: 144px;
+    padding-left: 144px;
+  }
+
+  .community-category {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 26px 16px;
+    border: solid white 1px;
+
+    h4 {
+      font-size: 24px;
+      font-weight: 600;
+      color: #4d4d4d;
+      padding-bottom: 6px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      text-align: center;
+      color: #717171;
+    }
+  }
+}
