@@ -233,3 +233,57 @@ button {
     font-size: 60px;
   }
 }
+
+footer {
+  display: flex;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #263238;
+  color: #f5f7fa;
+  gap: 150px;
+  padding-top: 30px;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  h4 {
+    padding-bottom: 15px;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .footer-icons {
+    display: flex;
+    gap: 12px;
+  }
+}
+.middle-footer {
+  display: flex;
+  gap: 70px;
+}
+
+.page-div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  h4 {
+    padding-bottom: 15px;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+input {
+  background-color: rgb(51, 51, 51);
+  padding: 7px;
+  border: none;
+  cursor: pointer;
+}
