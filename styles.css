@@ -7,7 +7,7 @@
 }
 body {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1300px;
   height: 100vh;
   font-family: inter;
 }
@@ -179,7 +179,7 @@ button {
 
   h4 {
     font-weight: 600;
-    font-size: 36px;
+    font-size: 32px;
     color: #4d4d4d;
   }
 
@@ -197,8 +197,39 @@ button {
   display: flex;
   gap: 30px;
 }
-.feedback-text {
+
+.blogs {
   display: flex;
   flex-direction: column;
+  padding: 48px 120px;
+}
+
+.blog-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+.blog-boxes {
+  display: flex;
   gap: 20px;
+}
+
+.blog-segment {
+  display: flex;
+  flex-direction: column;
+}
+.demo-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  padding-bottom: 20px;
+  background-color: #f5f7fa;
+  h1 {
+    font-weight: 600;
+    font-size: 60px;
+  }
 }
