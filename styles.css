@@ -34,9 +34,11 @@ ul a {
 button {
   background: #4caf4f;
   color: white;
-  padding: 10px;
+  padding: 10px 20px;
   border: none;
   border-radius: 7px;
+  font-size: 20px;
+  font-weight: 500;
 }
 .right-ul-text {
   color: #4caf4f;
@@ -45,18 +47,23 @@ button {
 .hero-section {
   display: flex;
   padding-top: 30px;
-  gap: 35px;
+  gap: 20px;
+  background-color: #f5f7fa;
+
   .hero-text {
-    padding: 162px 50px 100px 100px;
+    padding: 120px 50px 100px 100px;
     display: flex;
     flex-direction: column;
     gap: 16px;
 
     h1 {
-      font-size: 57px;
       font-weight: 600;
+      font-size: 52px;
+      line-height: 76px;
     }
-
+    span {
+      color: #4caf4f;
+    }
     p {
       font-family: Inter;
       font-weight: 400;
@@ -71,11 +78,12 @@ button {
   }
 
   .hero-image {
-    padding: 140px 60px 100px 150px;
+    padding: 140px 100px 100px 60px;
   }
 }
 
 .community {
+  padding-top: 48px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -156,9 +164,54 @@ button {
     color: #717171;
   }
 }
-.third-button {
-  padding: 10px 15px;
-  border-radius: 5px;
+/* third-button {
+  margin-top: 30px;
+} */
+
+.counter-section {
+  background-color: #f5f7fa;
+  color: #4d4d4d;
+  display: flex;
+  padding: 50px 120px;
+  gap: 100px;
+}
+
+.counter-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  h3 {
+    font-weight: 600;
+    font-size: 36px;
+  }
+  span {
+    color: #4caf4f;
+
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #18191f;
+  }
+}
+.counter-one,
+.counter-two {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+.number {
+  display: flex;
+}
+.actual-num {
+  p {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px;
+  }
 }
 
 .footer-explanation {
@@ -179,13 +232,18 @@ button {
 
   h4 {
     font-weight: 600;
-    font-size: 32px;
+    font-size: 36px;
+
+    line-height: 44px;
+
     color: #4d4d4d;
   }
 
   p {
     font-weight: 400;
     font-size: 14px;
+    line-height: 20px;
+    color: #717171;
   }
 }
 .feed-back {
@@ -193,15 +251,49 @@ button {
   display: flex;
   gap: 50px;
 }
+
+.feedback-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: #717171;
+
+  p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+
+    vertical-align: middle;
+  }
+
+  .author,
+  .icon-text {
+    color: #4caf4f;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    vertical-align: middle;
+  }
+  #role {
+    color: #89939e;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    vertical-align: middle;
+  }
+}
 .icons {
   display: flex;
-  gap: 30px;
+  gap: 15px;
 }
 
 .blogs {
   display: flex;
   flex-direction: column;
-  padding: 48px 120px;
+  gap: 30px;
+  padding: 48px 70px;
 }
 
 .blog-text {
@@ -209,6 +301,19 @@ button {
   flex-direction: column;
   gap: 16px;
   text-align: center;
+  h4 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    color: #717171;
+  }
+  p {
+    color: #717171;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 .blog-boxes {
   display: flex;
@@ -218,6 +323,37 @@ button {
 .blog-segment {
   display: flex;
   flex-direction: column;
+}
+
+.blog-explan {
+  border: solid #f5f7fa 6px;
+  border-radius: 13px;
+  max-width: 330px;
+  padding: 20px;
+  width: 100%;
+  margin-top: -40px;
+  margin-left: 20px;
+  background-color: #f5f7fa;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+  color: #717171;
+
+  h4 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  p {
+    color: #4caf4f;
+
+    font-weight: 600;
+    font-size: 20px;
+
+    vertical-align: middle;
+  }
 }
 .demo-part {
   display: flex;
@@ -231,6 +367,7 @@ button {
   h1 {
     font-weight: 600;
     font-size: 60px;
+    color: #4d4d4d;
   }
 }
 
@@ -261,7 +398,7 @@ footer {
 }
 .middle-footer {
   display: flex;
-  gap: 70px;
+  gap: 80px;
 }
 
 .page-div {
