@@ -7,17 +7,17 @@
 }
 body {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1300px;
   font-family: inter;
   margin: 0 auto;
+  align-items: center;
 }
 
-header {
+/* header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  max-width: 1440px;
-  width: 100%;
+
   position: fixed;
   max-height: 84px;
   height: 100%;
@@ -36,9 +36,38 @@ ul,
 ul a {
   text-decoration: none;
   color: black;
+} */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  top: 0px;
+  padding: 2rem 0;
+  width: 100%;
 }
 
-button {
+.logo h3 {
+  font-weight: 600;
+  font-size: 24px;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+ul a,
+.btn-login {
+  text-decoration: none;
+  color: black;
+  margin: 0 1rem;
+}
+
+.btn-signup {
+  text-decoration: none;
+}
+button,
+.btn-signup {
   background: #4caf4f;
   color: white;
   font-weight: 500;
@@ -49,10 +78,52 @@ button {
   border-radius: 7px;
   border: none;
 }
-.right-ul-text {
-  color: #4caf4f;
-}
 
+/* media for header */
+@media screen and (max-width: 1000px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    top: 0px;
+    padding: 2rem 2rem;
+    width: 100%;
+  }
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 1rem 0;
+  }
+
+  li a {
+    text-decoration: none;
+    color: black;
+    margin: 1rem 0rem;
+    display: block;
+  }
+
+  /*  */
+  .call-to-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .btn-login,
+  .btn-signup {
+    margin-bottom: 10px;
+  }
+  .btn-signup {
+    max-width: 90px;
+    width: 100%;
+    padding: 7px 10px;
+    font-size: 14px;
+  }
+}
 .hero-section {
   padding: 130px 100px;
   display: flex;
@@ -230,8 +301,6 @@ button {
   }
 }
 
-/* Media Queries for Specific Screen Sizes */
-
 /* For screens with max-width of 1024px (tablets and small screens) */
 @media (max-width: 1024px) {
   .community-branches {
@@ -362,7 +431,6 @@ button {
   }
 }
 
-/* For screens between 376px and 600px (mobile landscape and smaller mobile screens) */
 @media (min-width: 376px) and (max-width: 600px) {
   .three-years {
     padding: 40px 20px;
@@ -549,7 +617,7 @@ button {
   }
 }
 
-/* 3. For screens with a max-width of 375px */
+/* For screens with a max-width of 375px */
 @media (max-width: 375px) {
   .counter-section {
     padding: 20px 10px;
@@ -596,6 +664,8 @@ button {
 .footer-explanation-text {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 16px;
 
   button {
@@ -697,25 +767,33 @@ button {
 }
 
 .feed-back {
-  padding: 48px 100px;
+  padding: 32px 144px;
   display: flex;
-  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 78px;
+  background-color: #f5f7fa;
 }
 
 .feedback-text {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 16px;
+  max-width: 764px;
+  width: 100%;
   color: #717171;
 
   p {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-
-    vertical-align: middle;
   }
 
+  .sub-feed-text {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
   .author,
   .icon-text {
     color: #4caf4f;
@@ -736,96 +814,111 @@ button {
 }
 .icons {
   display: flex;
-  gap: 15px;
+  gap: 13px;
+  align-items: center;
 }
 
 @media (max-width: 1024px) {
   .feed-back {
-    padding: 48px 70px;
-    gap: 30px;
+    padding: 32px 100px;
+    gap: 60px;
   }
+
   .feedback-text {
-    gap: 20px;
-  }
+    display: flex;
 
-  .feedback-text p {
-    font-size: 14px;
-    line-height: 22px;
-  }
+    gap: 14px;
+    max-width: 550px;
+    width: 100%;
 
-  .feedback-text .author,
-  .feedback-text .icon-text {
-    font-size: 18px;
-    line-height: 26px;
+    .sub-feed-text {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .author,
+    .icon-text {
+      font-size: 18px;
+    }
   }
-
-  #role {
-    font-size: 14px;
-    line-height: 22px;
-  }
-
   .icons {
-    gap: 20px;
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    flex-wrap: nowrap;
   }
 }
 
-/*  For screens between 376px and 600px */
 @media (min-width: 376px) and (max-width: 600px) {
   .feed-back {
-    display: flex;
+    padding: 32px 100px;
+    gap: 40px;
     flex-direction: column;
-    justify-content: center;
   }
 
   .feedback-text {
-    gap: 15px;
-  }
+    display: flex;
 
-  .feedback-text p {
-    font-size: 12px;
-    line-height: 18px;
-  }
+    gap: 14px;
+    max-width: 450px;
+    width: 100%;
 
-  .feedback-text .author,
-  .feedback-text .icon-text {
-    font-size: 16px;
-    line-height: 24px;
-  }
+    .feedback-text p {
+      font-size: 14px;
+    }
 
-  #role {
-    font-size: 12px;
-    line-height: 18px;
+    .sub-feed-text {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .author,
+    .icon-text {
+      font-size: 18px;
+    }
   }
-
   .icons {
-    gap: 10px;
+    display: flex;
+    gap: 13px;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
 
-/* 3. For screens with a max-width of 375px */
+/*  For screens with a max-width of 375px */
 @media (max-width: 375px) {
+  .feed-back {
+    padding: 32px 60px;
+    gap: 40px;
+    flex-direction: column;
+  }
+
   .feedback-text {
-    gap: 10px;
-  }
+    display: flex;
 
-  .feedback-text p {
-    font-size: 10px;
-    line-height: 16px;
-  }
+    gap: 14px;
+    max-width: 450px;
+    width: 100%;
 
-  .feedback-text .author,
-  .feedback-text .icon-text {
-    font-size: 14px;
-    line-height: 20px;
-  }
+    .feedback-text p {
+      font-size: 12px;
+    }
 
-  #role {
-    font-size: 10px;
-    line-height: 16px;
+    .sub-feed-text {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .author,
+    .icon-text {
+      font-size: 14px;
+    }
   }
-
   .icons {
-    gap: 8px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }
 
@@ -934,66 +1027,104 @@ button {
     }
   }
 }
-media (min-width: 376px) and (max-width: 600px) {
+@media (min-width: 376px) and (max-width: 600px) {
   .blogs {
-    padding: 48px 144px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
+    padding: 35px 70px;
+    gap: 14px;
   }
   .blog-text {
-    text-align: center;
     gap: 16px;
-    max-width: 628px;
+    max-width: 400px;
     width: 100%;
-    justify-content: center;
   }
   .blog-text h4 {
-    text-align: center;
-    font-weight: 600;
-    font-size: 36px;
+    font-size: 24px;
     line-height: 44px;
     color: #717171;
   }
 
   .blog-text p {
-    color: #717171;
-
-    font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
   }
   .blog-boxes {
     display: flex;
-    gap: 18px;
+    flex-direction: column;
+    gap: 24px;
   }
 
   .blog-topics {
-    background-color: #f5f7fa;
-    border: solid #f5f7fa 6px;
-    border-radius: 13px;
     max-width: 317px;
-    padding: 16px;
+    padding: 12px;
     width: 100%;
-    margin-top: -40px;
+    margin-top: -30px;
     margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    text-align: center;
-    color: #717171;
+    gap: 12px;
 
     h4 {
       font-weight: 600;
-      font-size: 20px;
+      font-size: 18px;
       line-height: 28px;
     }
 
     p {
-      color: #4caf4f;
       font-weight: 600;
-      font-size: 20px;
+      font-size: 16px;
+      vertical-align: middle;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .blogs {
+    padding: 30px 50px;
+    gap: 14px;
+  }
+  .blog-text {
+    gap: 16px;
+    max-width: 320px;
+    width: 100%;
+  }
+  .blog-img {
+    max-width: 250px;
+    width: 100%;
+  }
+  .blog-segment {
+    justify-content: center;
+    align-items: center;
+  }
+  .blog-text h4 {
+    font-size: 22px;
+    line-height: 44px;
+    color: #717171;
+  }
+  .blog-text p {
+    font-size: 14px;
+  }
+  .blog-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .blog-topics {
+    max-width: 200px;
+    padding: 8px;
+    width: 100%;
+    margin-top: -30px;
+    margin-left: 21px;
+    gap: 10px;
+
+    h4 {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 28px;
+    }
+
+    p {
+      font-weight: 600;
+      font-size: 12px;
       vertical-align: middle;
     }
   }
