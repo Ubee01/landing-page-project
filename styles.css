@@ -13,31 +13,6 @@ body {
   align-items: center;
 }
 
-/* header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  position: fixed;
-  max-height: 84px;
-  height: 100%;
-  padding: 22px 120px 22px 105px;
-  z-index: 2;
-}
-
-ul,
-.right {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-  list-style-type: none;
-}
-
-ul a {
-  text-decoration: none;
-  color: black;
-} */
-
 nav {
   display: flex;
   justify-content: space-around;
@@ -370,16 +345,16 @@ button,
 .three-years {
   padding: 85px 144px;
   display: flex;
-  gap: 49px;
 
+  gap: 49px;
   margin: 0 auto;
 }
 
 .three-text {
   display: flex;
   padding-top: 100px;
-  padding-left: 60px;
-  padding-right: 60px;
+  max-width: 601px;
+  width: 100%;
   flex-direction: column;
   gap: 16px;
 
@@ -586,7 +561,7 @@ button,
   }
 }
 
-/* 2. For screens between 376px and 600px */
+/*  For screens between 376px and 600px */
 @media (min-width: 376px) and (max-width: 600px) {
   .counter-section {
     padding: 30px 20px;
@@ -664,8 +639,7 @@ button,
 .footer-explanation-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
   gap: 16px;
 
   button {
@@ -747,6 +721,12 @@ button,
     gap: 15px;
   }
 
+  .footer-explanation-img {
+    max-width: 120px;
+    width: 100%;
+    align-self: start;
+  }
+
   .footer-explanation-text {
     justify-content: center;
     text-align: center;
@@ -821,6 +801,7 @@ button,
 @media (max-width: 1024px) {
   .feed-back {
     padding: 32px 100px;
+    flex-direction: column;
     gap: 60px;
   }
 
@@ -828,7 +809,7 @@ button,
     display: flex;
 
     gap: 14px;
-    max-width: 550px;
+    max-width: 500px;
     width: 100%;
 
     .sub-feed-text {
@@ -987,7 +968,7 @@ button,
 /* media */
 @media (max-width: 1024px) {
   blogs {
-    padding: 40px 100px;
+    padding: 40px 80px;
 
     gap: 14px;
   }
@@ -1002,7 +983,8 @@ button,
 
   .blog-boxes {
     display: flex;
-    gap: 16px;
+    flex-direction: column;
+    gap: 12px;
   }
 
   .blog-topics {
